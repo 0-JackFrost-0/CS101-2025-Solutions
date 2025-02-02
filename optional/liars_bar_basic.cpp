@@ -152,11 +152,11 @@ main_program {
             // the bluffer is dead, and the game ends
             // if the bluffer is not dead, the game continues
             cout << "✅ CORRECT! The Bluffer was " << (blufferLying ? "LYING" : "TELLING THE TRUTH") << "!\n" << endl;
-            cout << "🔫 The Bluffer pulls the trigger..." << endl;
+            cout << "🔫 The Bluffer rolls the die..." << endl;
             int bullet = rand() % 6 + 1;
             
             if (bullet == bluffNum) {
-                cout << "💀 *BLUFFER IS DEAD!* 💀" << endl;
+                cout << "💀 *BLUFFER LOSES!* 💀" << endl;
                 blufferLost = true;
             } else {
                 cout << "😅 Bluffer survives this round..." << endl;
@@ -168,11 +168,11 @@ main_program {
             // the guesser is dead, and the game ends
             // if the guesser is not dead, the game continues
             cout << "❌ WRONG! The Bluffer was " << (blufferLying ? "LYING" : "TELLING THE TRUTH") << "!\n" << endl;
-            cout << "🔫 The Guesser pulls the trigger..." << endl;
+            cout << "🔫 The Guesser rolls the die..." << endl;
             int bullet = rand() % 6 + 1;
 
             if (bullet == guesserNum) {
-                cout << "💀 *GUESSER IS DEAD!* 💀" << endl;
+                cout << "💀 *GUESSER LOSES!* 💀" << endl;
                 guesserLost = true;
             } else {
                 cout << "😅 Guesser survives this round..." << endl;
